@@ -1,0 +1,334 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #1E1E1E;
+}
+
+#navbar{
+    height: 13vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #404040;
+    color: #fff;
+    padding: 0 6vw;
+    z-index: 999;
+}
+#navbar h1{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#navbar h1 span{
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: rgb(112, 180, 240);
+}
+
+#navbar .link-group{
+    font-size: 1.4vw;
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+}
+#navbar .link-group a{
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    padding: 0 5vw;
+    position: relative;
+    padding-top: 10vw;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+}
+
+#page1 .left{
+    width: 50%;
+    height: 100%;
+}
+#page1 .left h1{
+    font-size: 6vw;
+    font-weight: 400;
+}
+#page1 .left h1 span{
+    color: #308ED3;
+    font-size: 6.5vw;
+    font-weight: 500;
+}
+#page1 .left p{
+    font-size: 1.2vw;
+    width: 70%;
+    line-height: 1.5;
+    margin-top: 2vw;
+    color: #B1BCE4;
+}
+#page1 .left button{
+    cursor: pointer;
+    padding: 1.3vw 3vw;
+    font-size: 1.6vw;
+    margin-top: 4vw;
+    outline: 0;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2.5vw;
+    background-color: #308ED3;
+    transition: all ease-in 0.1s;
+}
+
+#page1 .left button:hover{
+    background-color: #007bd2;
+}
+
+#page1 .right{
+    width: 50%;
+    height: 100%;
+    padding-left: 5vw;
+}
+
+#page1 .right .img-bg{
+    position: absolute;
+    height: 50vh;
+    width: 30vw;
+    margin-left: 5vw;
+    margin-top: 8vw;
+}
+#page1 .right .img-bg img{
+    height: 100%;
+    width: 100%;
+}
+#page1 .right .personal-img{
+    position: absolute;
+    height: 55vh;
+    width: 55vh;
+    margin-left: 6vw;
+    margin-top: 2vw;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    padding: 0 5vw;
+    position: relative;
+    padding-top: 10vw;
+    border-bottom: 1px solid #fff;
+}
+
+#page2 .left{
+    width: 50%;
+    height: 100%;
+}
+#page2 .left .image-div{
+    height: 70vh;
+    width: 35vw;
+}
+#page2 .left .image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2 .right{
+    width: 50%;
+    height: 100%;
+}
+#page2 .right .top{
+    margin-bottom: 3vw;
+}
+#page2 .right .top h1{
+    font-size: 3.3vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+#page2 .right .top h1 span{
+    color: #308ED3;
+}
+
+#page2 .right .top p{
+    font-size: 1.1vw;
+    width: 75%;
+    line-height: 1.5;
+}
+
+#page2 .right .btm h2{
+    font-size: 2vw;
+    font-weight: 500;
+    color: #C4C9E3;
+}
+#page2 .right .btm .skills{
+    margin-top: 1.2vw;
+    height: 15vh;
+    width: 100%;
+    gap: 0.5vw;
+    display: flex;
+}
+#page2 .right .btm .skills .box{
+    height: 15vh;
+    width: 6vw;
+    border: 1px solid #474545;
+    background-color: #fff;
+}
+#page2 .right .btm .skills .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#page2 .right .btm .skills .box3 img{
+    object-fit: cover;
+}
+
+#page3{
+    min-height: 200vh;
+    width: 100vw;  
+    color: #fff;
+    padding: 0 5vw;
+    position: relative;
+    padding-top: 10vw;
+    border-bottom: 1px solid #fff;
+}
+#page3 h1{
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+    color: #308ED3;
+}
+#page3 p{
+    font-size: 1.2vw;
+    margin-bottom: 5vw;
+}
+#page3 .elem{
+    height: 65vh;
+    width: 100%;
+    position: relative;
+    margin-top: 5vw;
+}
+#page3 .elem .box1{
+    position: absolute;
+    top: 5vw;
+    left: 8vw;
+    height: 65%;
+    width: 35%;
+    background-color: #8b4545;
+}
+#page3 .elem .box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3 .elem .box2{
+    position: absolute;
+    top: 2vw;
+    left: 35vw;
+    height: 65%;
+    width: 35%;
+    padding: 0 2vw;
+    background-color: #0a5c97;
+}
+#page3 .elem .box2 ul li{
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+#page3 .elem .box2 ul h2{
+    font-size: 1.9vw;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1vw;
+    color: #cbf8ff;
+}
+
+#page3 .elem button{
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    font-weight: 600;
+    padding: 0.8vw 2.5vw;
+    font-size: 1.3vw;
+    border-radius: 2vw;
+    color: #fff;
+    background-color: #0d2b40;
+}
+#page3 .elem button:hover{
+    background-color: #6c8292;
+}
+#page3 .elem .code{
+    position: absolute;
+    left: 15vw;
+}
+#page3 .elem .live{
+    position: absolute;
+    left: 50vw;
+    top: 23vw;
+}
+
+#page4{
+    height: 100vh;   
+     width: 100vw;  
+    color: #fff;
+    padding: 0 5vw;
+    position: relative;
+    padding-top: 10vw;
+    border-bottom: 1px solid #fff;
+}
+#page4 h1{
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: 5vw;
+}
+#page4 h1 span{
+    color: #0a5c97;
+    font-weight: 600;
+}
+#page4 .elem{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 1vw;
+}
+#page4 .elem img{
+    height: 5vh;
+}
+#page4 .elem a{
+    text-decoration: wavy;
+}
+#page4 .elem h6{
+    font-size: 1.5vw;
+    color: #fff;
+    font-weight: 500;
+}
+#page4 .image{
+    height: 60vh;
+    width: 40%;
+    top: 10vw;
+    left: 50vw;
+    position: absolute;
+}
+#page4 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
